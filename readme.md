@@ -1,23 +1,31 @@
-# JAVASCRIPT ADVANCE
+<h1 style="font-weight: bold; color: #5C8984"> JAVASCRIPT ADVANCE </h1>
+<img src="https://techvccloud.mediacdn.vn/2018/11/23/js-15429579443112042672363-crop-1542957949936317424252.png" width="100%">
+<img src="https://img.shields.io/badge/Author-Tunnienguci-blue" alt="Author" />
+<img src="https://img.shields.io/badge/Version-1.0.0-red" alt="Version" />
+<img src="https://img.shields.io/badge/Status-Completed-success"alt="Status" />
 
-## Type and Coercion / Các kiểu dữ liệu và ép kiểu
-Trong JS có tất cả tổng cộng là 08 kiểu dữ liệu đó là.
-- String
-- Number
-- Boolean
-- Undefined
-- Null
-- Object
-- Symbol
-- BigInt (ES2020)
+<h2 style="font-weight: bold; color: #374259">Type and Coercion / Các kiểu dữ liệu và ép kiểu</h2>
+Trong JS có tất cả tổng cộng là 08 kiểu dữ liệu đó là: 
+
+1. String
+2. Number
+3. Boolean
+4. Undefined
+5. Null
+7. Object
+8. Symbol
+9. BigInt (ES2020)
 
 Trong đó có Object là thuộc kiểu dữ liệu phức tạp (Reference Type) còn các kiểu kia là kiểu dữ liệu nguyên thủy (Primitive Type).
 Trong kiểu dữ liệu Object có subtype chính và thường được sử dụng là:
 - Function
 - Array
 
-### Typeof
+<br><br>
+
+<h3 style="font-weight: bold; color:#545B77"> Typeof </h3>
 Để kiểm tra kiểu dữ liệu của một biến ta có thể sử dụng toán tử typeof. Toán tử typeof trả về một trong các giá trị sau:
+
 - "string"
 - "number"
 - "boolean"
@@ -27,12 +35,17 @@ Trong kiểu dữ liệu Object có subtype chính và thường đượ
 - "symbol"
 - "bigint"
 
-### Coercion
+<br><br>
+
+
+<h3 style="font-weight: bold; color:#545B77"> Coercion </h3>
 Coercion là quy trình chuyển đổi kiểu dữ liệu từ kiểu này sang kiểu khác. Coercion trong JS có 2 loại là:
 - Implicit Coercion
 - Explicit Coercion
 
-#### Implicit Coercion
+<br><br>
+
+<h3 style="font-weight: bold; color:#545B77"> Implicit Coercion </h3>
 Implicit Coercion là quy trình chuyển đổi kiểu dữ liệu từ kiểu này sang kiểu khác mà không cần sử dụng toán tử chuyển đổi. Implicit Coercion thường xảy ra trong các trường hợp sau:
 - Toán tử + với String
 - Toán tử - * / với Number
@@ -71,7 +84,9 @@ console.log(0 ?? "1"); // 0
 console.log(null ?? "1"); // "1"
 ```
 
-#### Explicit Coercion
+<br><br>
+
+<h3 style="font-weight: bold; color:#545B77"> Explicit Coercion </h3>
 Explicit Coercion là quy trình chuyển đổi kiểu dữ liệu từ kiểu này sang kiểu khác mà cần sử dụng toán tử chuyển đổi. Coercion trong JS có 2 loại là:
 - String()
 - Number()
@@ -147,15 +162,17 @@ console.log(Function("1")); // ƒ anonymous()
 
 ```
 
-### Truthy và Falsy
-Trong JS, có 7 giá trị được xem là Falsy và 7 giá trị được xem là Truthy. Các giá trị Falsy là:
-- false
-- 0
-- ""
-- null
-- undefined
-- NaN
-- -0
+<br><br>
+
+<h2 style="font-weight: bold; color: #374259">Truthy và Falsy </h2>
+<b> Trong JS, có 7 giá trị được xem là Falsy và 7 giá trị được xem là Truthy. Các giá trị Falsy là: </b>
+false
+0
+""
+null
+undefined
+NaN
+-0
 
 Các giá trị Truthy là:
 - true
@@ -165,8 +182,10 @@ Các giá trị Truthy là:
 - []
 - function(){}
 
-### Toán tử
-#### Toán tử ++ và --
+<br><br>
+
+<h2 style="font-weight: bold; color: #374259"> Toán tử </h2>
+<h3 style="font-weight: bold; color: #545B77"> Toán tử ++ và -- </h3>
 Toán tử ++ và -- là toán tử tăng và giảm giá trị của biến lên 1 đơn vị. Toán tử ++ và -- có 2 cách sử dụng là:
 - Toán tử tiền tố: ++a, --a
 - Toán tử hậu tố: a++, a--
@@ -184,7 +203,7 @@ console.log(b++); // 1
 console.log(b); // 2
 ```
 
-#### Toán tử + và -
+<h3 style="font-weight: bold; color: #545B77"> Toán tử + và - </h3>
 Toán tử + và - là toán tử chuyển đổi kiểu dữ liệu. Toán tử + và - có 2 cách sử dụng là:
 - Toán tử tiền tố: +a, -a
 - Toán tử hậu tố: a+, a-
@@ -202,8 +221,10 @@ console.log(b+); // 1
 
 ```
 
-## Scope, Lexical và Closure trong JS
-### Scope
+<br><br>
+
+<h2 style="font-weight: bold; color: #374259"> Scope, Lexical và Closure trong JS </h2>
+<h3 style="font-weight: bold; color: #545B77">Scope</h3>
 Scope là phạm vi hoạt động của biến. Trong JS, có 3 loại scope là:
 - Global scope: là phạm vi hoạt động của biến toàn bộ chương trình.
 - Local scope: là phạm vi hoạt động của biến trong 1 hàm.
@@ -227,8 +248,10 @@ function test() {
     console.log(c); // 3
 }
 ```
+<br><br>
 
-### Lexical
+
+<h3 style="font-weight: bold; color:#545B77"> Lexical </h3>
 Lexical là phạm vi hoạt động của biến trong 1 hàm. Lexical có 2 loại là:
 - Lexical scope: là phạm vi hoạt động của biến trong 1 hàm.
 - Lexical environment: là phạm vi hoạt động của biến trong 1 hàm và các hàm bên ngoài.
@@ -254,7 +277,9 @@ function test() {
 }
 ```
 
-### Closure
+<br><br>
+
+<h3 style="font-weight: bold; color:#545B77"> Closure </h3>
 Closure là phạm vi hoạt động của biến trong 1 hàm và các hàm bên ngoài. Closure có 2 loại là:
 - Closure scope: là phạm vi hoạt động của biến trong 1 hàm và các hàm bên ngoài.
 - Closure environment: là phạm vi hoạt động của biến trong 1 hàm và các hàm bên ngoài và các biến bên ngoài.
@@ -281,9 +306,10 @@ function test() {
 let test3 = test();
 test3();
 ```
+<br><br>
 
-## this trong JS
-### this
+<h2 style="font-weight: bold; color: #E94057"> this trong JS </h2>
+<h3 style="font-weight: bold; color:#545B77"> this trong đối tượng </h3>
 this là một keyword được sử dụng để truy cập vào các thuộc tính và phương thức của đối tượng hiện tại. this có thể thay đổi giá trị tùy vào cách gọi hàm.
 
 Ví dụ:
@@ -298,8 +324,9 @@ let person = {
 
 person.getName(); // Nguyen Van A
 ```
+<br><br>
 
-### this trong hàm
+<h3 style="font-weight: bold; color:#545B77"> this trong hàm </h3>
 Trong hàm, this có thể thay đổi giá trị tùy vào cách gọi hàm. Nếu gọi hàm thông thường thì this sẽ là window. Nếu gọi hàm thông qua phương thức của đối tượng thì this sẽ là đối tượng đó.
 
 Ví dụ:
@@ -320,8 +347,9 @@ let person = {
 
 person.getName(); // person
 ```
+<br><br>
 
-### this trong class
+<h3 style="font-weight: bold; color:#545B77"> this trong class </h3>
 Trong class, this sẽ là đối tượng được khởi tạo từ class đó.
 
 Ví dụ:
@@ -340,8 +368,66 @@ class Person {
 let person = new Person("Nguyen Van A", 20);
 person.getName(); // Person { name: 'Nguyen Van A', age: 20 }
 ```
+<br><br>
+<br><br>
 
-## Hoisting trong JS
+<h2 style="font-weight: bold; color: #374259"> Destructuring trong JS </h2>
+Destructuring là cách khai báo biến từ các thuộc tính của một đối tượng.
+
+Ví dụ:
+```javascript
+let person = {
+    name: "Nguyen Van A",
+    age: 20
+}
+
+let { name, age } = person;
+console.log(name); // Nguyen Van A
+console.log(age); // 20
+```
+<br><br>
+<br><br>
+
+<h2 style="font-weight: bold; color: #374259"> Rest parameter trong JS </h2>
+REST parameter: REST parameter (cũng được gọi là rest operator) cho phép chúng ta truyền vào một số lượng tham số không xác định vào một hàm dưới dạng một mảng. Cú pháp của REST parameter là sử dụng dấu ba chấm "..." trước tên tham số cuối cùng của hàm. Ví dụ:
+
+Ví dụ:
+```javascript
+function sum(...numbers) {
+  let total = 0;
+  for (let number of numbers) {
+    total += number;
+  }
+  return total;
+}
+
+console.log(sum(1, 2, 3)); // Output: 6
+console.log(sum(4, 5, 6, 7, 8)); // Output: 30
+```
+Trong ví dụ trên, REST parameter ...numbers cho phép hàm sum nhận vào một số lượng tham số không xác định và lưu trữ chúng trong một mảng có tên numbers. Chúng ta có thể sử dụng mảng numbers để tính tổng các số truyền vào.
+
+<br><br>
+<br><br>
+
+<h2 style="font-weight: bold; color: #374259"> Spread operator trong JS </h2>
+Spread operator: Spread operator cho phép chúng ta truyền một mảng vào một hàm có số lượng tham số không xác định. Cú pháp của spread operator là sử dụng dấu ba chấm "..." trước một mảng. 
+
+Ví dụ:
+```javascript
+let numbers = [1, 2, 3, 4, 5];
+console.log(...numbers); // Output: 1 2 3 4 5
+
+let array1 = [6, 7, 8];
+let array2 = [9, 10, ...array1, 11, 12];
+console.log(array2); // Output: [9, 10, 6, 7, 8, 11, 12]
+```
+
+Trong ví dụ trên, Spread parameter ...numbers trải rải các phần tử trong mảng numbers thành các phần tử riêng lẻ khi in ra. Trong ví dụ thứ hai, chúng ta sử dụng Spread parameter để kết hợp các mảng lại với nhau và thêm các phần tử mới vào giữa.
+
+<br><br>
+<br><br>
+
+<h2 style="font-weight: bold; color: #374259"> Hoisting trong JS </h2>
 Trong JS như chúng ta đã biết rằng có các kiểu khai báo biến bằng var, let, const trong đó đa phần mọi người đều biết rằng chỉ var mới có thể hoisting còn các kiểu khai báo biến khác đều không. Nhưng thực tế thì tất cả đều có thể hoisting.
 Engine của JS sẽ đọc code qua một lượt và tìm thấy cú pháp khai báo sau đó nó lưu vào bộ nhớ và sẽ hoisting lên đầu. 
 
@@ -394,9 +480,11 @@ const a;
 console.log(a); // Error
 a = 1;
 ```
+<br><br>
+<br><br>
 
-## forEarch, map, filter, reduce trong JS
-### forEach
+<h2 style="font-weight: bold; color: #374259"> forEarch, map, filter, reduce trong JS </h2>
+<h3 style="font-weight: bold; color:#545B77"> forEach </h3>
 forEach là một hàm của array để duyệt qua từng phần tử của array. Hàm forEach sẽ nhận vào một hàm callback và thực thi hàm callback đó cho từng phần tử của array. Hàm callback sẽ nhận vào 3 tham số là phần tử, vị trí của phần tử và array.
 
 Ví dụ:
@@ -406,8 +494,9 @@ arr.forEach(function(item, index, array) {
     console.log(item, index, array);
 });
 ```
+<br><br>
 
-### map
+<h3 style="font-weight: bold; color:#545B77"> map </h3>
 map là một hàm của array để duyệt qua từng phần tử của array. Hàm map sẽ nhận vào một hàm callback và thực thi hàm callback đó cho từng phần tử của array. Hàm callback sẽ nhận vào 3 tham số là phần tử, vị trí của phần tử và array. Sau đó hàm map sẽ trả về một array mới với các phần tử được thay đổi bởi hàm callback.
 
 Ví dụ:
@@ -418,8 +507,9 @@ let newArr = arr.map(function(item, index, array) {
 });
 console.log(newArr); // [2, 4, 6, 8, 10]
 ```
+<br><br>
 
-### filter
+<h3 style="font-weight: bold; color:#545B77"> filter </h3>
 filter là một hàm của array để duyệt qua từng phần tử của array. Hàm filter sẽ nhận vào một hàm callback và thực thi hàm callback đó cho từng phần tử của array. Hàm callback sẽ nhận vào 3 tham số là phần tử, vị trí của phần tử và array. Sau đó hàm filter sẽ trả về một array mới với các phần tử được thay đổi bởi hàm callback. Nếu hàm callback trả về true thì phần tử đó sẽ được thêm vào array mới, nếu hàm callback trả về false thì phần tử đó sẽ không được thêm vào array mới.
 
 Ví dụ:
@@ -431,8 +521,9 @@ let newArr = arr.filter(function(item, index, array) {
 
 console.log(newArr); // [2, 4]
 ```
+<br><br>
 
-### reduce
+<h3 style="font-weight: bold; color:#545B77"> reduce </h3>
 reduce là một hàm của array để duyệt qua từng phần tử của array. Hàm reduce sẽ nhận vào một hàm callback và thực thi hàm callback đó cho từng phần tử của array. Hàm callback sẽ nhận vào 4 tham số là phần tử, vị trí của phần tử, array và giá trị trả về của lần thực thi trước. Sau đó hàm reduce sẽ trả về giá trị của lần thực thi cuối cùng.
 
 Ví dụ:
@@ -444,8 +535,10 @@ let sum = arr.reduce(function(total, item, index, array) {
 
 console.log(sum); // 15
 ```
+<br><br>
+<br><br>
 
-## Callback trong JS
+<h2 style="font-weight: bold; color: #374259"> Callback trong JS </h2>
 Callback là một hàm được truyền vào một hàm khác như một tham số. Hàm nhận vào hàm callback sẽ thực thi hàm callback đó.
 
 Ví dụ:
@@ -460,8 +553,10 @@ function sayHi() {
 
 sayHello(sayHi); // Hi
 ```
+<br><br>
+<br><br>
 
-## Promise trong JS
+<h2 style="font-weight: bold; color: #374259"> Promise trong JS </h2>
 Promise là một đối tượng được sử dụng để thực thi một hàm bất đồng bộ. Promise sinh ra để giải quyết vấn đề callback hell để lại. Và Promise
 có 2 trạng thái là pending và settled. Trạng thái settled có 2 trạng thái con là fulfilled và rejected.
 Trong promise có 3 phương thức là then, catch và finally. Phương thức then sẽ được gọi khi promise được resolved, phương thức catch sẽ được gọi khi promise được rejected và phương thức finally sẽ được gọi khi promise được resolved hoặc rejected.
@@ -482,6 +577,7 @@ promise.then(function(result) {
     console.log('Done');
 });
 ```
+<br><br>
 
 Các method của Promise:
 - Promise.all(): Phương thức này sẽ nhận vào một array các promise và trả về một promise mới. Promise mới sẽ được resolved khi tất cả các promise được truyền vào đều được resolved và sẽ được rejected khi ít nhất một promise được truyền vào bị rejected. Nếu promise mới được resolved thì giá trị trả về của promise mới sẽ là một array các giá trị trả về của các promise được truyền vào. Nếu promise mới được rejected thì giá trị trả về của promise mới sẽ là giá trị của promise được truyền vào bị rejected đầu tiên.
@@ -512,9 +608,11 @@ Promise.all([promise1, promise2, promise3]).then(function(result) {
     console.log(error);
 });
 ```
+<br><br>
+<br><br>
 
 
-## Async/Await trong JS
+<h2 style="font-weight: bold; color: #374259"> Async/Await trong JS </h2>
 Async/Await là một cách để thực thi một hàm bất đồng bộ. Async/Await là một cách để viết code đồng bộ nhưng vẫn có thể thực thi bất đồng bộ. Async/Await là một cách để viết code đồng bộ nhưng vẫn có thể thực thi bất đồng bộ. Async/Await là một cách để viết code đồng bộ nhưng vẫn có thể thực thi bất đồng bộ. Async/Await là một cách để viết code đồng bộ nhưng vẫn có thể thực thi bất đồng bộ. Async/Await là một cách để viết code đồng bộ nhưng vẫn có thể thực thi bất đồng bộ. Async/Await là một cách để viết code đồng bộ nhưng vẫn có thể thực thi bất đồng bộ. Async/Await là một cách để viết code đồng bộ nhưng vẫn có thể thực thi bất đồng bộ.
 
 Ví dụ:
@@ -548,6 +646,7 @@ sayHello().catch(function(error) {
     console.log(error); // Error
 });
 ```
+<br><br>
 
 Await là một keyword được dùng để đợi một promise được resolved hoặc rejected. Await chỉ có thể được dùng trong async function. Khi dùng await, async function sẽ đợi đến khi promise được resolved hoặc rejected và trả về giá trị của promise đó.
 
