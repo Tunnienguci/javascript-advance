@@ -165,14 +165,14 @@ console.log(Function("1")); // ƒ anonymous()
 <br><br>
 
 <h2 style="font-weight: bold; color: #374259">Truthy và Falsy </h2>
-<b> Trong JS, có 7 giá trị được xem là Falsy và 7 giá trị được xem là Truthy. Các giá trị Falsy là: </b>
-false
-0
-""
-null
-undefined
-NaN
--0
+<b> Trong JS, có 7 giá trị được xem là Falsy và các giá trị còn lại sẽ được xem là Truthy. Các giá trị Falsy là: </b>
+- false
+- 0
+- ""
+- null
+- undefined
+- NaN
+- -0
 
 Các giá trị Truthy là:
 - true
@@ -181,6 +181,7 @@ Các giá trị Truthy là:
 - {}
 - []
 - function(){}
+- ...
 
 <br><br>
 
